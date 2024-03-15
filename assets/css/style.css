@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -6,25 +5,23 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-:root{
+:root {
   /* Combo - 1 */
   /* --primary-color: #EC3B38; */
   /* --primary-color-hover: #fa716e; */
-   /* Combo - 2 */
-  --primary-color: #72b626;
-  --primary-color-hover: #a8e761; 
+  /* Combo - 2 */
+  --primary-color: #4a57ce;
+  --primary-color-hover: #39409e;
   /* Combo - 3 */
   /* --primary-color: #fa5b0f;
   --primary-color-hover: #f57e47; */
-  
-
 }
 a {
   color: var(--primary-color);
 }
 
 a:hover {
-  color:var(--primary-color-hover);
+  color: var(--primary-color-hover);
   text-decoration: none;
 }
 
@@ -269,7 +266,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg.jpeg") top right no-repeat;
+  background: url("../img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -364,7 +361,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #45505b;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 .section-title h2::before {
@@ -387,14 +384,11 @@ section {
   background: var(--primary-color);
   bottom: 0;
   left: calc(50% - 20px);
-  transition: .3s linear;
-
+  transition: 0.3s linear;
 }
-.section-title h2:hover::after{
-
+.section-title h2:hover::after {
   width: 120px;
   left: calc(50% - 60px);
-
 }
 .section-title p {
   margin-bottom: 0;
@@ -403,6 +397,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -426,6 +421,10 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.img-circle {
+  clip-path: circle();
 }
 
 /*--------------------------------------------------------------
@@ -586,6 +585,9 @@ section {
   bottom: 15px;
   right: 15px;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -807,7 +809,7 @@ section {
     height: 90vh !important;
   }
 }
-.venoframe{
+.venoframe {
   border-radius: 10px;
 }
 body::-webkit-scrollbar {
@@ -816,12 +818,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   background: #fff;
   margin: 20px 0;
-
 }
 body::-webkit-scrollbar-track:hover {
   background-color: #ddd;
   margin: 20px 0;
-
 }
 body:hover::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
@@ -831,12 +831,10 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
   border-radius: 10px;
 }
-body{
+body {
   scrollbar-color: var(--primary-color) #fff;
   scrollbar-width: 10px;
 }
-
-
 
 /*--------------------------------------------------------------
 # Clients
@@ -869,24 +867,21 @@ body{
 .clients img {
   transition: all 0.4s ease-in-out;
 }
-@media(max-width: 900px)
-{
-  .clients .client-logo{
+@media (max-width: 900px) {
+  .clients .client-logo {
     padding: 0;
   }
 }
 .clients .client-logo:hover img {
   transform: scale(1.1);
 }
-@media(max-width: 900px)
-{
-  .clients .client-logo img{
-   height: 100px;
+@media (max-width: 900px) {
+  .clients .client-logo img {
+    height: 100px;
   }
 }
-@media(min-width: 1100px)
-{.firebase-icon img{
-  height: 110px;
-}
-
+@media (min-width: 1100px) {
+  .firebase-icon img {
+    height: 110px;
+  }
 }
